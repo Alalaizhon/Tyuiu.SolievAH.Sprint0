@@ -3,13 +3,15 @@
 
 #include <iostream>
 #include <string>
+#include <Windows.h>
 using namespace std;
 
 int main()
 {
-	setlocale(LC_ALL, "Russian");
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
 	cout << "Hello world!\n";
-	cout << "Введите ФИО через пробел на английском: ";
+	cout << "Введите ФИО через пробел: ";
 	char space = ' ';
 	string firstname, secondname, thirdname = " ";
 	cin >> secondname >> firstname >> thirdname;
@@ -20,4 +22,5 @@ int main()
 	cout << ". Ваш возраст:" << space << age;
 	return 0;
 }
+
 
