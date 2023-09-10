@@ -11,6 +11,7 @@ class Service :public ISprint0Task2V0
 	virtual int Add(int a, int b) override
 	{
 		return a + b;
+		return 0;
 	}
-
+	
 };
