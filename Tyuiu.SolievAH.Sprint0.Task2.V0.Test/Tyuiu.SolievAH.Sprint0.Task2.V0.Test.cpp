@@ -22,5 +22,4 @@ namespace UnitTest1
 				Assert::AreEqual(7, c);
 		}
 	};
-	return 0;
 }
